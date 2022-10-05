@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Contato - IFSP - Pirituba - PWE</title>
+  <link rel=”favicon” charset=”favicon.ico”/>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <header id="header" class="header"></header>
+  
+  <section>
+    <h1 class="title">Mande uma mensagem</h1>
+
+    <form action="" method="" enctype="">
+
+      <ul>
+        <li>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" class="campos_form" required>
+        </li>
+        <li>
+          <label>E-Mail</label>
+          <input type="email" name="email" class="campos_form" required>
+        </li>
+        <li>
+          <label for="number">Telefone</label>
+          <input type="tel" name="number" class="campos_form" placeholder="(99) 99999-9999" required>
+        </li>
+        <li>
+          <label for="assunto">Assunto</label>
+          <select name="assunto" class="campos_form" required>
+            <option selected disabled value>-- Selecione --</option>
+            <option value="Reclamacao">Reclamação</option>
+            <option value="Sugestao">Sugestão</option>
+          </select>
+        </li>
+        <li>
+          <label for="mensagem">Mensagem</label>
+          <textarea class="campos_form" name="mensagem" required></textarea>
+        </li>
+        <li>
+          <fieldset >
+            <legend>Opções de Resposta</legend>
+            E-mail <input type="checkbox" name="opcao"> 
+            Telefone <input type="checkbox" name="opcao"> 
+          </fieldset>
+        </li>
+          <button>Enviar</button>
+      </ul>
+      
+    </form>
+  </section>
+  
+  <footer class="footer" id="footer"></footer>
+</body>
+
+</html>

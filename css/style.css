@@ -1,0 +1,238 @@
+.wow {
+  width: 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 8px!important;
+}
+
+.cabecalho_menu {
+  background-color: green;
+  margin-bottom: 1.75rem;
+}
+
+.cabecalho_menu ul{
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+.cabecalho_menu li{
+  padding: 14px 16px;
+  float: left;
+}
+
+.cabecalho_menu li a{
+  text-decoration: none;
+  color: white;
+}
+
+.cabecalho_menu li:hover{
+  background-color: red;
+}
+
+.cabecalho_menu li#sobre {
+  float: right;
+}
+
+.cabecalho_menu__dropdown {
+  display: inline-block;
+}
+
+.cabecalho_menu__dropdown:hover .cabecalho_menu__dropdown-conteudos{
+  display: block;
+}
+
+.cabecalho_menu__dropdown-conteudos {
+  display: none;
+  position: absolute;
+  margin-left: -1rem;
+  margin-top: .90rem;
+}
+
+.cabecalho_menu__dropdown-conteudos a{
+  background-color: #f1f1f1;
+  color: black !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.cabecalho_menu__dropdown-conteudos a:hover {
+  background-color: white;
+  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+}
+
+.logo {
+  margin-top: 3.5rem;
+}
+
+/* Início da parte relacionada ao slideshow da home page */
+.slide {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slide-item {
+  display: none;
+}
+
+.anterior, .proximo {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.9s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.proximo {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.anterior:hover, .proximo:hover {
+  background-color: #717171;
+}
+
+.index-imagem {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.circulos {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Fim da parte relacionada ao slideshow da home page */
+
+.grid-imagens {
+  margin-top: 2rem;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-imagens-item {
+  text-align: center;
+  font-size: 12.3px;
+}
+
+
+.desafios {
+  text-align: center;
+}
+
+.title {
+  font-size: 2em;
+}
+
+.campos_form {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 12px 20px;
+  display: inline-block;
+  margin: 0.5rem 0;
+}
+
+.campo_form__espacamento {
+  margin: 0.5rem 0;
+}
+
+.campo_form_cor {
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 100%;
+  background-color: #26ab26;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+}
+
+.fieldset_form_entrar {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 6px;
+  margin: 1rem 0;
+  padding: 20px;
+}
+
+/* Página de ADS */
+#titulo {
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+
+#dados {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+
+#dados td, #dados th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#dados tr:nth-child(even){background-color: #f2f2f2;}
+
+#dados tr:hover {background-color: #ddd;}
+
+#dados th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #008000;
+  color: white;
+}
